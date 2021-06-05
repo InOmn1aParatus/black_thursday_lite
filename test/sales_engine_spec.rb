@@ -4,11 +4,13 @@ require 'rspec'
 RSpec.describe SalesEngine do
   describe 'instantiation' do
     before :each do
-      sales_engine = SalesEngine.new
+      @sales_engine = SalesEngine.new
     end
 
     it 'exists' do
-      expect(sales_engine).to be_a(SalesEngine)
+      expect(@sales_engine).to be_a(SalesEngine)
     end
+
+    
   end
 end
